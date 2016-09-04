@@ -1,0 +1,20 @@
+cxp.datasource.platform=postgresql
+cxp.datasource.driver-class-name=org.postgresql.Driver
+
+# Postgresql
+cxp.datasource.url=jdbc:postgresql://<host>:5432/cxpdev
+cxp.datasource.username=
+cxp.datasource.password=
+
+base-api-url=http://<host>:<port>/api
+dataset-lookup-url=${base-api-url}/file-datasets/search/by-filename?filename=
+jobs-url=${base-api-url}/jobs
+test-jobs-url=${base-api-url}/test-jobs
+date-formats-url=${base-api-url}/settings/date-formats
+
+logging.level.org.springframework=INFO
+logging.level.cxp=INFO
+
+# TODO
+# should not be required
+xd.stream.name=default
